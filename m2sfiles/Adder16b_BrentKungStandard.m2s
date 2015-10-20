@@ -45,8 +45,8 @@ $ end
 .SUBCKT ADDER a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s14 s15 s16 vdd vss
     xGenProp0 a0 b0 gen0 prop0 vdd vss GenPropInv
     xGenProp1 a1 b1 gen1 prop1 vdd vss GenPropInv
-    xGenProp2 a2 b2 gen2 prop2 vdd vss GenProp
-    xGenProp3 a3 b3 gen3 prop3 vdd vss GenProp
+    xGenProp2 a2 b2 gen2 prop2 vdd vss GenPropInv
+    xGenProp3 a3 b3 gen3 prop3 vdd vss GenPropInv
     xGenProp4 a4 b4 gen4 prop4 vdd vss GenProp
     xGenProp5 a5 b5 gen5 prop5 vdd vss GenProp
     xGenProp6 a6 b6 gen6 prop6 vdd vss GenProp
@@ -60,7 +60,7 @@ $ end
     xGenProp14 a14 b14 gen14 prop14 vdd vss GenProp
     xGenProp15 a15 b15 gen15 prop15 vdd vss GenProp
     xDotOperator_a_0 gen0 	gen1 prop1 gen1_0 	  vdd vss DotOperatorLowerInv
-    xDotOperator_a_1 gen2 prop2 gen3 prop3 gen3_2 prop3_2 vdd vss DotOperator
+    xDotOperator_a_1 gen2 prop2	gen3 prop3 gen3_2 prop3_2 vdd vss DotOperatorUpperInv
     xDotOperator_a_2 gen4 prop4 gen5 prop5 gen5_4 prop5_4 vdd vss DotOperator
     xDotOperator_a_3 gen6 prop6 gen7 prop7 gen7_6 prop7_6 vdd vss DotOperator
     xDotOperator_a_4 gen8 prop8 gen9 prop9 gen9_8 prop9_8 vdd vss DotOperator
@@ -84,7 +84,9 @@ $ end
     xDotOperator_m_2 gen7_0 prop7_0 gen9_8 prop9_8 gen9_0 prop9_0 vdd vss DotOperator
     xDotOperator_m_3 gen11_0 prop11_0 gen13_12 prop13_12 gen13_0 prop13_0 vdd vss DotOperator
 
-    xDotOperator_n_1 gen1_0 prop1_0 gen2 prop2 gen2_0 prop2_0 vdd vss DotOperator
+    	xNOT9_1	gen1_0  gen1_0_inv	vdd vss MYNOT
+	*xNOT9_2	prop1_0 prop1_0_inv	vdd vss MYNOT
+    xDotOperator_n_1 gen1_0_inv	    gen2 prop2 gen2_0	      vdd vss DotOperatorLowerInv
     xDotOperator_n_2 gen3_0 prop3_0 gen4 prop4 gen4_0 prop4_0 vdd vss DotOperator
     xDotOperator_n_3 gen5_0 prop5_0 gen6 prop6 gen6_0 prop6_0 vdd vss DotOperator
     xDotOperator_n_4 gen7_0 prop7_0 gen8 prop8 gen8_0 prop8_0 vdd vss DotOperator
@@ -94,8 +96,8 @@ $ end
 
     xXOR_0 prop0 vss    s0 vdd vss MYXNOR
     xXOR_1 prop1 gen0   s1 vdd vss MYXOR
-    xXOR_2 prop2 gen1_0 s2 vdd vss MYXOR 
-    xXOR_3 prop3 gen2_0 s3 vdd vss MYXOR 
+    xXOR_2 prop2 gen1_0 s2 vdd vss MYXNOR 
+    xXOR_3 prop3 gen2_0 s3 vdd vss MYXNOR 
     xXOR_4 prop4 gen3_0 s4 vdd vss MYXOR 
     xXOR_5 prop5 gen4_0 s5 vdd vss MYXOR 
     xXOR_6 prop6 gen5_0 s6 vdd vss MYXOR 
@@ -178,6 +180,12 @@ $ end
     xAND A B Gen_inv  vdd vss MYNAND
     xXNOR A B Prop_inv vdd vss MYXNOR
 .ENDS GenpropInv
+
+.SUBCKT DotOperatorUpperInv Gen1 Prop1 Gen2 Prop2 GenOut PropOut vdd vss
+    xAOI Gen1 Gen2 Prop2 GenOut vdd vss MYAOI
+
+    xXNOR Prop2 Prop1 PropOut vdd vss MYNOR
+.ENDS DotOperator
 
 .SUBCKT DotOperatorLower Gen1 Gen2 Prop2 GenOut vdd vss
     xAOI Gen1 Gen2 Prop2 GenOut vdd vss MYAOI
