@@ -1,0 +1,47 @@
+* "simulator" "HSPICE" 
+* "version" "G-2012.06-SP2 32-BIT"
+* "format" "HSP"
+* "rundate" "16:41:54 09/30/2015 "
+* "netlist" "/users/start2012/r0305883/Master2/DDIS/DDIS1/spicefiles/inverterArray.sp "
+* "runtitle" "**********************************"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in0 =   0.            
++ in1 =   0.            
++ in10 =   0.            
++ in11 =   0.            
++ in12 =   0.            
++ in13 =   0.            
++ in14 =   0.            
++ in15 =   0.            
++ in2 =   0.            
++ in3 =   0.            
++ in4 =   0.            
++ in5 =   0.            
++ in6 =   0.            
++ in7 =   0.            
++ in8 =   0.            
++ in9 =   0.            
++ out0 =   1.0000        
++ out1 =   1.0000        
++ out10 =   1.0000        
++ out11 =   1.0000        
++ out12 =   1.0000        
++ out13 =   1.0000        
++ out14 =   1.0000        
++ out15 =   1.0000        
++ out2 =   1.0000        
++ out3 =   1.0000        
++ out4 =   1.0000        
++ out5 =   1.0000        
++ out6 =   1.0000        
++ out7 =   1.0000        
++ out8 =   1.0000        
++ out9 =   1.0000        
++ vdd =   1.0000        
++ vss =   0.            
+***   END: Saved Operating Point ***                     

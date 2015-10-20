@@ -1,0 +1,20 @@
+* "simulator" "HSPICE" 
+* "version" "G-2012.06-SP2 32-BIT"
+* "format" "HSP"
+* "rundate" "11:20:07 10/13/2015 "
+* "netlist" "/users/start2012/r0305883/Master2/DDIS/DDIS1/spicefiles/bufferChain.sp "
+* "runtitle" "**********************************"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in0 =   0.            
++ in1 = 999.9999m       
++ in2 =  87.6750n       
++ out = 999.9996m       
++ out1 =  31.3862n       
++ vdd =   1.0000        
++ vss =   0.            
+***   END: Saved Operating Point ***                     

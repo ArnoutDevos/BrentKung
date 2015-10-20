@@ -1,0 +1,19 @@
+* "simulator" "HSPICE" 
+* "version" "G-2012.06-SP2 32-BIT"
+* "format" "HSP"
+* "rundate" "09:57:29 09/30/2015 "
+* "netlist" "/users/start2012/r0305883/Master2/DDIS/DDIS1/spicefiles/simpleNandVec.sp "
+* "runtitle" "**********************************"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in1 =   0.            
++ in2 =   0.            
++ out =   1.0000        
++ vdd =   1.0000        
++ vss =   0.            
++ xnand1.n1 =  44.7314m       
+***   END: Saved Operating Point ***                     

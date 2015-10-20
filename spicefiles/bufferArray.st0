@@ -1,0 +1,71 @@
+***** HSPICE -- G-2012.06-SP2 32-BIT (Nov 27 2012) RHEL32 ******
+ Input File: /users/start2012/r0305883/Master2/DDIS/DDIS1/spicefiles/bufferArray
+ lic:
+ lic: FLEXlm: v10.9.8
+ lic: USER:   r0305883             HOSTNAME: pc-klas5-12.esat.kuleuven.be
+ lic: HOSTID:                      PID:      8198
+ lic: Using FLEXlm license file:
+ lic: 1709@licserv
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2015/2014.09
+ lic: 1(in_use)/20(total) FLOATING license(s) on SERVER licserv
+ lic:
+ init: begin read circuit files,  cpu clock=  2.00E-02
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/ad
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/ad
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/behave
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/bjt
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/burr_brn
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/comlinear
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/dio
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/fet
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/lin_tech
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/pci
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/signet
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/ti
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/tline
+       option search = /esat/micas-data/software/hspice_2012.06/hspice/
+                         parts/xilinx
+       option runlvl
+       option post
+       option nomod
+       option opts
+       option fast
+       option parhier = local
+ init: end read circuit files,  cpu clock=  2.00E-02 peak memory=       105 mb
+ init: begin check errors,  cpu clock=  2.00E-02
+ init: end check errors,  cpu clock=  3.00E-02 peak memory=       106 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  3.00E-02
+       establish matrix -- done,  cpu clock=  3.00E-02 peak memory=       106 mb
+       re-order matrix -- done,  cpu clock=  3.00E-02 peak memory=       106 mb
+ init: end setup matrix,  cpu clock=  3.00E-02 peak memory=       106 mb
+ dcop: begin dcop,  cpu clock=  3.00E-02
+ dcop: end dcop,  cpu clock=  3.00E-02 peak memory=       106 mb                tot_iter=       9
+ output: /users/start2012/r0305883/Master2/DDIS/DDIS1/spicefiles/bufferArray.tr0
+ sweep: tran tran0    begin, stop_t=  5.00E-09 #sweeps=5001 cpu clock=  3.00E-02
+ tran: time= 6.5307E-10 tot_iter=      14 conv_iter=       7 cpu clock= 3.00E-02
+ tran: time= 1.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 3.00E-02
+ tran: time= 1.5222E-09 tot_iter=     108 conv_iter=      46 cpu clock= 5.00E-02
+ tran: time= 2.0000E-09 tot_iter=     114 conv_iter=      49 cpu clock= 5.00E-02
+ tran: time= 2.5040E-09 tot_iter=     208 conv_iter=      87 cpu clock= 6.00E-02
+ tran: time= 3.0000E-09 tot_iter=     216 conv_iter=      91 cpu clock= 6.00E-02
+ tran: time= 3.5081E-09 tot_iter=     307 conv_iter=     129 cpu clock= 8.00E-02
+ tran: time= 4.0000E-09 tot_iter=     315 conv_iter=     133 cpu clock= 8.00E-02
+ tran: time= 4.5041E-09 tot_iter=     399 conv_iter=     168 cpu clock= 9.00E-02
+ tran: time= 5.0000E-09 tot_iter=     407 conv_iter=     172 cpu clock= 9.00E-02
+ sweep: tran tran0    end,  cpu clock=  1.00E-01 peak memory=       107 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

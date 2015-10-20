@@ -1,0 +1,63 @@
+* "simulator" "HSPICE" 
+* "version" "G-2012.06-SP2 32-BIT"
+* "format" "HSP"
+* "rundate" "17:00:05 09/30/2015 "
+* "netlist" "/users/start2012/r0305883/Master2/DDIS/DDIS1/spicefiles/bufferArray.sp "
+* "runtitle" "**********************************"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in0 =   0.            
++ in1 =   0.            
++ in10 =   0.            
++ in11 =   0.            
++ in12 =   0.            
++ in13 =   0.            
++ in14 =   0.            
++ in15 =   0.            
++ in2 =   0.            
++ in3 =   0.            
++ in4 =   0.            
++ in5 =   0.            
++ in6 =   0.            
++ in7 =   0.            
++ in8 =   0.            
++ in9 =   0.            
++ inb0 = 999.9999m       
++ inb1 = 999.9999m       
++ inb10 = 999.9999m       
++ inb11 = 999.9999m       
++ inb12 = 999.9999m       
++ inb13 = 999.9999m       
++ inb14 = 999.9999m       
++ inb15 = 999.9999m       
++ inb2 = 999.9999m       
++ inb3 = 999.9999m       
++ inb4 = 999.9999m       
++ inb5 = 999.9999m       
++ inb6 = 999.9999m       
++ inb7 = 999.9999m       
++ inb8 = 999.9999m       
++ inb9 = 999.9999m       
++ out0 =  35.5324n       
++ out1 =  35.5324n       
++ out10 =  35.5324n       
++ out11 =  35.5324n       
++ out12 =  35.5324n       
++ out13 =  35.5324n       
++ out14 =  35.5324n       
++ out15 =  35.5324n       
++ out2 =  35.5324n       
++ out3 =  35.5324n       
++ out4 =  35.5324n       
++ out5 =  35.5324n       
++ out6 =  35.5324n       
++ out7 =  35.5324n       
++ out8 =  35.5324n       
++ out9 =  35.5324n       
++ vdd =   1.0000        
++ vss =   0.            
+***   END: Saved Operating Point ***                     
