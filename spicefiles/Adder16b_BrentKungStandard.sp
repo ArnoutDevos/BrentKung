@@ -131,40 +131,40 @@ Xadder a_buff0 a_buff1 a_buff2 a_buff3 a_buff4 a_buff5 a_buff6 a_buff7 a_buff8 a
     xGenProp13 a13 b13 gen13 prop13 vdd vss GenProp
     xGenProp14 a14 b14 gen14 prop14 vdd vss GenProp
     xGenProp15 a15 b15 gen15 prop15 vdd vss GenProp
-    	xDotOperator_a_0 gen0 gen1 prop1 gen1_0 vdd vss DotOperatorLower
-    xDotOperator_a_1 gen2 prop2 gen3 prop3 gen3_2 prop3_2 vdd vss DotOperatorUpper
-    xDotOperator_a_2 gen4 prop4 gen5 prop5 gen5_4 prop5_4 vdd vss DotOperatorUpper
-    xDotOperator_a_3 gen6 prop6 gen7 prop7 gen7_6 prop7_6 vdd vss DotOperatorUpper
-    xDotOperator_a_4 gen8 prop8 gen9 prop9 gen9_8 prop9_8 vdd vss DotOperatorUpper
-    xDotOperator_a_5 gen10 prop10 gen11 prop11 gen11_10 prop11_10 vdd vss DotOperatorUpper
-    xDotOperator_a_6 gen12 prop12 gen13 prop13 gen13_12 prop13_12 vdd vss DotOperatorUpper
-    xDotOperator_a_7 gen14 prop14 gen15 prop15 gen15_14 prop15_14 vdd vss DotOperatorUpper
+    xDotOperator_a_0 gen0 gen1 prop1 gen1_0 vdd vss DotOperatorLower
+    xDotOperator_a_1 gen2 prop2 gen3 prop3 gen3_2 prop3_2 vdd vss DotOperator
+    xDotOperator_a_2 gen4 prop4 gen5 prop5 gen5_4 prop5_4 vdd vss DotOperator
+    xDotOperator_a_3 gen6 prop6 gen7 prop7 gen7_6 prop7_6 vdd vss DotOperator
+    xDotOperator_a_4 gen8 prop8 gen9 prop9 gen9_8 prop9_8 vdd vss DotOperator
+    xDotOperator_a_5 gen10 prop10 gen11 prop11 gen11_10 prop11_10 vdd vss DotOperator
+    xDotOperator_a_6 gen12 prop12 gen13 prop13 gen13_12 prop13_12 vdd vss DotOperator
+    xDotOperator_a_7 gen14 prop14 gen15 prop15 gen15_14 prop15_14 vdd vss DotOperator
 
-    	xDotOperator_b_0 gen1_0 gen3_2 prop3_2 gen3_0 vdd vss DotOperatorLower
-    xDotOperator_b_1 gen5_4 prop5_4 gen7_6 prop7_6 gen7_4 prop7_4 vdd vss DotOperatorUpper
-    xDotOperator_b_2 gen9_8 prop9_8 gen11_10 prop11_10 gen11_8 prop11_8 vdd vss DotOperatorUpper
-    xDotOperator_b_3 gen13_12 prop13_12 gen15_14 prop15_14 gen15_12 prop15_12 vdd vss DotOperatorUpper
+    xDotOperator_b_0 gen1_0 gen3_2 prop3_2 gen3_0 vdd vss DotOperatorLower
+    xDotOperator_b_1 gen5_4 prop5_4 gen7_6 prop7_6 gen7_4 prop7_4 vdd vss DotOperator
+    xDotOperator_b_2 gen9_8 prop9_8 gen11_10 prop11_10 gen11_8 prop11_8 vdd vss DotOperator
+    xDotOperator_b_3 gen13_12 prop13_12 gen15_14 prop15_14 gen15_12 prop15_12 vdd vss DotOperator
 
-    	xDotOperator_c_0 gen3_0 gen7_4 prop7_4 gen7_0 vdd vss DotOperatorLower
-    xDotOperator_c_1 gen11_8 prop11_8 gen15_12 prop15_12 gen15_8 prop15_8 vdd vss DotOperatorUpper
+    xDotOperator_c_0 gen3_0 gen7_4 prop7_4 gen7_0 vdd vss DotOperatorLower
+    xDotOperator_c_1 gen11_8 prop11_8 gen15_12 prop15_12 gen15_8 prop15_8 vdd vss DotOperator
 
-    	xDotOperator_d_0 gen7_0 gen15_8 prop15_8 gen15_0 vdd vss DotOperatorLower
+    xDotOperator_d_0 gen7_0 gen15_8 prop15_8 gen15_0 vdd vss DotOperatorLower
 
-    	xDotOperator_l_1 gen7_0 gen11_8 prop11_8 gen11_0 vdd vss DotOperatorLower
+    xDotOperator_l_1 gen7_0 gen11_8 prop11_8 gen11_0 vdd vss DotOperatorLower
 
-    	xDotOperator_m_1 gen3_0 gen5_4 prop5_4 gen5_0 vdd vss DotOperatorLower
-    	xDotOperator_m_2 gen7_0 gen9_8 prop9_8 gen9_0 vdd vss DotOperatorLower
-    	xDotOperator_m_3 gen11_0 gen13_12 prop13_12 gen13_0 vdd vss DotOperatorLower
+    xDotOperator_m_1 gen3_0 gen5_4 prop5_4 gen5_0 vdd vss DotOperatorLower
+    xDotOperator_m_2 gen7_0 gen9_8 prop9_8 gen9_0 vdd vss DotOperatorLower
+    xDotOperator_m_3 gen11_0 gen13_12 prop13_12 gen13_0 vdd vss DotOperatorLower
 
-    	xDotOperator_n_1 gen1_0 gen2 prop2 gen2_0 vdd vss DotOperatorLower
-    	xDotOperator_n_2 gen3_0 gen4 prop4 gen4_0 vdd vss DotOperatorLower
-    	xDotOperator_n_3 gen5_0 gen6 prop6 gen6_0 vdd vss DotOperatorLower
-    	xDotOperator_n_4 gen7_0 gen8 prop8 gen8_0 vdd vss DotOperatorLower
-    	xDotOperator_n_5 gen9_0 gen10 prop10 gen10_0 vdd vss DotOperatorLower
-    	xDotOperator_n_6 gen11_0 gen12 prop12 gen12_0 vdd vss DotOperatorLower
-    	xDotOperator_n_7 gen13_0 gen14 prop14 gen14_0 vdd vss DotOperatorLower
+    xDotOperator_n_1 gen1_0 gen2 prop2 gen2_0 vdd vss DotOperatorLower
+    xDotOperator_n_2 gen3_0 gen4 prop4 gen4_0 vdd vss DotOperatorLower
+    xDotOperator_n_3 gen5_0 gen6 prop6 gen6_0 vdd vss DotOperatorLower
+    xDotOperator_n_4 gen7_0 gen8 prop8 gen8_0 vdd vss DotOperatorLower
+    xDotOperator_n_5 gen9_0 gen10 prop10 gen10_0 vdd vss DotOperatorLower
+    xDotOperator_n_6 gen11_0 gen12 prop12 gen12_0 vdd vss DotOperatorLower
+    xDotOperator_n_7 gen13_0 gen14 prop14 gen14_0 vdd vss DotOperatorLower
 
-    	xXOR_0 prop0  s0 vdd vss MYBuffer
+    xXOR_0 prop0 vss    s0 vdd vss MYXOR
     xXOR_1 prop1 gen0   s1 vdd vss MYXOR
     xXOR_2 prop2 gen1_0 s2 vdd vss MYXOR 
     xXOR_3 prop3 gen2_0 s3 vdd vss MYXOR 
@@ -180,7 +180,7 @@ Xadder a_buff0 a_buff1 a_buff2 a_buff3 a_buff4 a_buff5 a_buff6 a_buff7 a_buff8 a
     xXOR_13 prop13 gen12_0 s13 vdd vss MYXOR 
     xXOR_14 prop14 gen13_0 s14 vdd vss MYXOR 
     xXOR_15 prop15 gen14_0 s15 vdd vss MYXOR 
-    	xXOR_16 gen15_0 s16 vdd vss MYBuffer
+    xXOR_16 vss   gen15_0 s16 vdd vss MYXOR
 .ENDS ADDER
 
 
@@ -232,11 +232,6 @@ Xadder a_buff0 a_buff1 a_buff2 a_buff3 a_buff4 a_buff5 a_buff6 a_buff7 a_buff8 a
     xXOR A B Prop vdd vss MYXOR
 .ENDS Genprop
 
-*.SUBCKT GenProp A B NGen Prop vdd vss
- *   xAND A B NGen  vdd vss MYNAND
-  *  xXOR A B Prop vdd vss MYXOR
-*.ENDS Genprop
-
 .SUBCKT DotOperator Gen1 Prop1 Gen2 Prop2 GenOut PropOut vdd vss
     xNAND Prop1 Prop2 NPropOut vdd vss MYNAND
     xNOT1 NPropOut PropOut vdd vss MYNOT
@@ -245,40 +240,9 @@ Xadder a_buff0 a_buff1 a_buff2 a_buff3 a_buff4 a_buff5 a_buff6 a_buff7 a_buff8 a
     xNOT2 NGenOut GenOut vdd vss MYNOT
 .ENDS DotOperator
 
-*** Own SubCKTs ***
 .SUBCKT DotOperatorLower Gen1 Gen2 Prop2 GenOut vdd vss
-    xAO2 Gen1 Gen2 Prop2 GenOut vdd vss MYAO2
-    *xNOT2 NGenOut GenOut vdd vss MYNOT
+    xAOI Gen2 Prop2 Gen1 NGenOut vdd vss MYAOI
+    xNOT2 NGenOut GenOut vdd vss MYNOT
 .ENDS DotOperatorLower
-
-.SUBCKT DotOperatorRightTop Gen1 Gen2 Prop2 GenOut vdd vss
-    xAO2 Gen1 Gen2 Prop2 GenOut vdd vss MYAO3
-    *xNOT2 NGenOut GenOut vdd vss MYNOT
-.ENDS DotOperatorRightTop
-
-.SUBCKT DotOperatorUpper Gen1 Prop1 Gen2 Prop2 GenOut PropOut vdd vss
-    xNAND Prop1 Prop2 NPropOut vdd vss MYNAND
-    xNOT1 NPropOut PropOut vdd vss MYNOT
-    
-    xAO2 Gen1 Gen2 Prop2 GenOut vdd vss MYAO2
-.ENDS DotOperatorUpper
-
-.SUBCKT MYBuffer A B vdd vss multfac = '1'
-    xNOT1 A internal vdd vss MYNOT
-    xNOT2 internal B vdd vss MYNOT
-.ENDS MYBuffer
-
-.SUBCKT MYAO2 Gen1 Gen2 Prop2 Out vdd vss
-    xAOI Gen1 Prop2 Gen1Prop2_inv vdd vss MYNAND
-    xNOT1 Gen2 Gen2_inv vdd vss MYNOT
-    
-    xNAND2 Gen2_inv Gen1Prop2_inv Out vdd vss MYNAND
-.ENDS MYAO2
-
-.SUBCKT MYAO3 Gen1 Gen2 Prop2 Out vdd vss
-    xAOI Gen1 Prop2 Gen1Prop2_inv vdd vss MYNAND
-    
-    xNAND2 Gen2 Gen1Prop2_inv Out vdd vss MYNAND
-.ENDS MYAO23
 
 .END
