@@ -166,7 +166,7 @@ $ end
 
     xAOI Gen2 Prop2 Gen1 NGenOut vdd vss MYAOI
     xNOT2 NGenOut GenOut vdd vss MYNOT
-.ENDS DotOperator
+.ENDS DotOperator 
 
 .SUBCKT DotOperatorLower Gen1 Gen2 Prop2 GenOut vdd vss
     xAOI Gen2 Prop2 Gen1 NGenOut vdd vss MYAOI
