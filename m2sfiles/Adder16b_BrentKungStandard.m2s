@@ -92,7 +92,7 @@ $ end
     xDotOperator_n_6 gen11_0 gen12 prop12 gen12_0 vdd vss DotOperatorLower
     xDotOperator_n_7 gen13_0 gen14 prop14 gen14_0 vdd vss DotOperatorLower
 
-    xXOR_0 prop0 vss    s0 vdd vss MYXOR
+    xXOR_0 prop0        s0 vdd vss MYBUFFER
     xXOR_1 prop1 gen0   s1 vdd vss MYXOR
     xXOR_2 prop2 gen1_0 s2 vdd vss MYXOR 
     xXOR_3 prop3 gen2_0 s3 vdd vss MYXOR 
@@ -108,7 +108,7 @@ $ end
     xXOR_13 prop13 gen12_0 s13 vdd vss MYXOR 
     xXOR_14 prop14 gen13_0 s14 vdd vss MYXOR 
     xXOR_15 prop15 gen14_0 s15 vdd vss MYXOR 
-    xXOR_16 vss   gen15_0 s16 vdd vss MYXOR
+    xXOR_16        gen15_0 s16 vdd vss MYBUFFER
 .ENDS ADDER
 
 
@@ -168,10 +168,17 @@ $ end
     xNOT2 NGenOut GenOut vdd vss MYNOT
 .ENDS DotOperator 
 
+*** Own SubCKTs ***
+
 .SUBCKT DotOperatorLower Gen1 Gen2 Prop2 GenOut vdd vss
     xAOI Gen2 Prop2 Gen1 NGenOut vdd vss MYAOI
     xNOT2 NGenOut GenOut vdd vss MYNOT
 .ENDS DotOperatorLower
+
+.SUBCKT MYBUFFER input output vdd vss multfac='1'
+    xNOT1 input internal vdd vss MYNOT
+    xNOT2 internal output vdd vss MYNOT
+.ENDS MYBUFFER
 
 .END
 
