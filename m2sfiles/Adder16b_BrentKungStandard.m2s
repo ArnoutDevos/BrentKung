@@ -164,21 +164,27 @@ $ end
     xNAND Prop1 Prop2 NPropOut vdd vss MYNAND
     xNOT1 NPropOut PropOut vdd vss MYNOT
 
-    xAOI Gen2 Prop2 Gen1 NGenOut vdd vss MYAOI
-    xNOT2 NGenOut GenOut vdd vss MYNOT
+    xAOI Gen1 Gen2 Prop2 GenOut vdd vss MYAO
+    *xNOT2 NGenOut GenOut vdd vss MYNOT
 .ENDS DotOperator 
 
 *** Own SubCKTs ***
 
 .SUBCKT DotOperatorLower Gen1 Gen2 Prop2 GenOut vdd vss
-    xAOI Gen2 Prop2 Gen1 NGenOut vdd vss MYAOI
-    xNOT2 NGenOut GenOut vdd vss MYNOT
+    xAO Gen1 Gen2 Prop2 GenOut vdd vss MYAO
+    *xNOT2 NGenOut GenOut vdd vss MYNOT
 .ENDS DotOperatorLower
 
 .SUBCKT MYBUFFER input output vdd vss multfac='1'
     xNOT1 input internal vdd vss MYNOT
     xNOT2 internal output vdd vss MYNOT
 .ENDS MYBUFFER
+
+.SUBCKT MYAO Gen1 Gen2 Prop2 GenOut vdd vss
+    xNAND1 Gen1 Prop2 Gen1Prop2_inv vdd vss MYNAND
+    xNOT1 Gen2 Gen2_inv vdd vss MYNOT
+    xNAND2 Gen1Prop2_inv Gen2_inv GenOut vdd vss MYNAND
+.ENDS MYAO 
 
 .END
 
