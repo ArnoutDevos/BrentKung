@@ -91,8 +91,9 @@ $ end
 
     	xNOT7_1	gen7_0  gen7_0_inv	vdd vss MYNOTSLOW
 	xNOT7_2	gen7_0_inv  gen7_0_b	vdd vss MYNOTSLOW
+	xNOT7_3	gen7_0_b  gen7_0_binv	vdd vss MYNOTSLOW
     xDotOperator_l_1 gen7_0_inv	    gen11_8 prop11_8 gen11_0	      vdd vss DotOperatorLowerInv
-	xBUF4	gen11_0  gen11_0_b	vdd vss MYBUFFER
+	xNOT7	gen11_0  gen11_0_inv	vdd vss MYNOTSLOW
 
     	xNOT8	gen3_0  gen3_0_inv	vdd vss MYNOTSLOW
     xDotOperator_m_1 gen3_0_inv	    gen5_4 prop5_4 gen5_0 	  vdd vss DotOperatorLower
@@ -103,9 +104,9 @@ $ end
     xDotOperator_n_1 gen1_0_inv	    gen2 prop2 gen2_0	      vdd vss DotOperatorLowerInv
     xDotOperator_n_2 gen3_0	    gen4 prop4 gen4_0	      vdd vss DotOperatorLowerInv
     xDotOperator_n_3 gen5_0	    gen6 prop6 gen6_0	      vdd vss DotOperatorLowerInv
-    xDotOperator_n_4 gen7_0_inv	    gen8 prop8 gen8_0	      vdd vss DotOperatorLowerInv
+    xDotOperator_n_4 gen7_0_binv	    gen8 prop8 gen8_0	      vdd vss DotOperatorLowerInv
     xDotOperator_n_5 gen9_0	    gen10 prop10 gen10_0      vdd vss DotOperatorLowerInv
-	xNOT10	gen11_0_b  gen11_0_inv	vdd vss MYNOTSLOW
+	
     xDotOperator_n_6 gen11_0_inv gen12 prop12 gen12_0 vdd vss DotOperatorLowerInv
     xDotOperator_n_7 gen13_0 gen14 prop14 gen14_0 vdd vss DotOperatorLowerInv
 
@@ -122,7 +123,7 @@ $ end
     xXOR_9 prop9 gen8_0 s9 vdd vss MYTXNOR 
     xXOR_10 prop10 gen9_0 s10 vdd vss MYTXOR 
     xXOR_11 prop11 gen10_0 s11 vdd vss MYTXNOR 
-    xXOR_12 prop12 gen11_0_b s12 vdd vss MYTXNOR 
+    xXOR_12 prop12 gen11_0_inv s12 vdd vss MYTXOR 
     xXOR_13 prop13 gen12_0 s13 vdd vss MYTXNOR 
     xXOR_14 prop14 gen13_0 s14 vdd vss MYTXOR 
     xXOR_15 prop15_inv gen14_0 s15 vdd vss MYTXOR 
