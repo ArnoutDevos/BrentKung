@@ -97,23 +97,23 @@ $ end
     xDotOperator_n_7 gen13_0 gen14 prop14 gen14_0 vdd vss DotOperatorLowerInv
 
 	*REMOVE s0 and s16 XOR gates with .connect
-    xXOR_0 prop0 vss    s0 vdd vss MYXNOR
-    xXOR_1 prop1 gen0   s1 vdd vss MYXOR
-    xXOR_2 prop2 gen1_0 s2 vdd vss MYXNOR 
-    xXOR_3 prop3 gen2_0 s3 vdd vss MYXNOR 
-    xXOR_4 prop4 gen3_0 s4 vdd vss MYXOR 
-    xXOR_5 prop5 gen4_0 s5 vdd vss MYXNOR 
-    xXOR_6 prop6 gen5_0 s6 vdd vss MYXOR 
-    xXOR_7 prop7 gen6_0 s7 vdd vss MYXNOR 
-    xXOR_8 prop8 gen7_0 s8 vdd vss MYXNOR 
-    xXOR_9 prop9 gen8_0 s9 vdd vss MYXNOR 
-    xXOR_10 prop10 gen9_0 s10 vdd vss MYXOR 
-    xXOR_11 prop11 gen10_0 s11 vdd vss MYXNOR 
-    xXOR_12 prop12 gen11_0 s12 vdd vss MYXNOR 
-    xXOR_13 prop13 gen12_0 s13 vdd vss MYXNOR 
-    xXOR_14 prop14 gen13_0 s14 vdd vss MYXOR 
-    xXOR_15 prop15 gen14_0 s15 vdd vss MYXNOR 
-    xXOR_16 vss   gen15_0 s16 vdd vss MYXNOR
+    xXOR_0 prop0 vss    s0 vdd vss MYTXNOR
+    xXOR_1 prop1 gen0   s1 vdd vss MYTXOR
+    xXOR_2 prop2 gen1_0 s2 vdd vss MYTXNOR 
+    xXOR_3 prop3 gen2_0 s3 vdd vss MYTXNOR 
+    xXOR_4 prop4 gen3_0 s4 vdd vss MYTXOR 
+    xXOR_5 prop5 gen4_0 s5 vdd vss MYTXNOR 
+    xXOR_6 prop6 gen5_0 s6 vdd vss MYTXOR 
+    xXOR_7 prop7 gen6_0 s7 vdd vss MYTXNOR 
+    xXOR_8 prop8 gen7_0 s8 vdd vss MYTXNOR 
+    xXOR_9 prop9 gen8_0 s9 vdd vss MYTXNOR 
+    xXOR_10 prop10 gen9_0 s10 vdd vss MYTXOR 
+    xXOR_11 prop11 gen10_0 s11 vdd vss MYTXNOR 
+    xXOR_12 prop12 gen11_0 s12 vdd vss MYTXNOR 
+    xXOR_13 prop13 gen12_0 s13 vdd vss MYTXNOR 
+    xXOR_14 prop14 gen13_0 s14 vdd vss MYTXOR 
+    xXOR_15 prop15 gen14_0 s15 vdd vss MYTXNOR 
+    xXOR_16 vss   gen15_0 s16 vdd vss MYTXNOR
 .ENDS ADDER
 
 
@@ -235,6 +235,46 @@ $ end
     xM1 output inputA vss vss MOSN w='multfac*120e-9*2' l='45e-9'
     xM2 output inputB vss vss MOSN w='multfac*120e-9*2' l='45e-9'
 .ENDS MYNOR
+
+.SUBCKT MYTXOR inputA inputB output vdd vss multfac='1'
+	xNOT1 inputB inputB_inv vdd vss MYNOT
+    xM4 output inputA inputB vdd MOSP w='multfac*2*120e-9' l='45e-9'
+    xM1 output inputA inputB_inv vss MOSN w='multfac*1*120e-9' l='45e-9'
+
+    xM3 output inputB inputA vdd MOSP w='multfac*2*120e-9' l='45e-9'
+    xM2 output inputB_inv inputA vss MOSN w='multfac*1*120e-9' l='45e-9'
+.ENDS MYTXOR
+
+.SUBCKT MYTXOR1 inputA inputB output vdd vss multfac='1'
+	xNOT1 inputB inputB_inv vdd vss MYNOT
+	xNOT2 inputA inputA_inv vdd vss MYNOT
+    xM4 output inputB inputA vdd MOSP w='multfac*2*120e-9' l='45e-9'
+    xM1 output inputB_inv inputA vss MOSN w='multfac*1*120e-9' l='45e-9'
+
+    xM3 output inputB_inv inputA_inv vdd MOSP w='multfac*2*120e-9' l='45e-9'
+    xM2 output inputB inputA_inv vss MOSN w='multfac*1*120e-9' l='45e-9'
+.ENDS MYTXOR1
+
+.SUBCKT MYTXNOR1 inputA inputB outputC vdd vss multfac='1'
+	xNOT1 inputB inputB_inv vdd vss MYNOT
+    xM4 output inputA inputB vdd MOSP w='multfac*2*120e-9' l='45e-9'
+    xM1 output inputA inputB_inv vss MOSN w='multfac*1*120e-9' l='45e-9'
+
+    xM3 output inputB inputA vdd MOSP w='multfac*2*120e-9' l='45e-9'
+    xM2 output inputB_inv inputA vss MOSN w='multfac*1*120e-9' l='45e-9'
+
+	xNOT2 output outputC vdd vss MYNOT
+.ENDS MYTXNOR1
+
+.SUBCKT MYTXNOR inputA inputB output vdd vss multfac='1'
+	xNOT1 inputB inputB_inv vdd vss MYNOT
+	xNOT2 inputA inputA_inv vdd vss MYNOT
+    xM4 output inputB inputA_inv vdd MOSP w='multfac*2*120e-9' l='45e-9'
+    xM1 output inputB_inv inputA_inv vss MOSN w='multfac*1*120e-9' l='45e-9'
+
+    xM3 output inputB_inv inputA vdd MOSP w='multfac*2*120e-9' l='45e-9'
+    xM2 output inputB inputA vss MOSN w='multfac*1*120e-9' l='45e-9'
+.ENDS MYTXNOR
 
 .END
 
