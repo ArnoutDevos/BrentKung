@@ -1,7 +1,7 @@
 inputfilestring = strcat(pwd,'/spicefiles/',inputfile,'.sp');
 outputdirectory = strcat(pwd,'/spicefiles/');
 
-hspicestring = ['source ~micasusr/design/scripts/hspice.rc hspice -i ', inputfilestring, ' -o ', outputdirectory];
+hspicestring = ['source ~micasusr/design/scripts/hspice.rc && export SNPSLMD_LICENSE_FILE=27020@saturn && hspice -i ', inputfilestring, ' -o ', outputdirectory];
 result = system(hspicestring);
 
 clear inputfilestring

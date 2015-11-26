@@ -61,21 +61,20 @@ $ end
     xGenProp14 a14 b14 gen14 prop14 vdd vss GenPropInvSlow
     xGenProp15 a15 b15 gen15 prop15 vdd vss GenPropInvSlow
 
-    xNOTprop0	prop0  prop0_inv	vdd vss MYNOTSLOW
-    
+        xNOTprop0	prop0  	prop0_inv	vdd vss MYNOTSLOW
     xDotOperator_a_0  prop1	gen1 gen0 gen1_0 	  vdd vss DotOperatorLowerInv multfac='1'
-	xNOT1	gen1_0  gen1_0_inv	vdd vss MYNOTSLOW
-    xDotOperator_a_1 gen2 prop2	gen3 prop3 gen3_2 prop3_2 vdd vss DotOperatorUpperInv
-    xDotOperator_a_2 gen4 prop4 gen5 prop5 gen5_4 prop5_4 vdd vss DotOperatorUpperInv
-    xDotOperator_a_3 gen6 prop6 gen7 prop7 gen7_6 prop7_6 vdd vss DotOperatorUpperInv
+        xNOT1	gen1_0  gen1_0_inv	vdd vss MYNOTSLOW
+    xDotOperator_a_1 gen2 prop2	gen3 prop3 gen3_2 prop3_2 vdd vss DotOperatorUpperInvSlow
+    xDotOperator_a_2 gen4 prop4 gen5 prop5 gen5_4 prop5_4 vdd vss DotOperatorUpperInvSlow
+    xDotOperator_a_3 gen6 prop6 gen7 prop7 gen7_6 prop7_6 vdd vss DotOperatorUpperInvSlow
     xDotOperator_a_4 gen8 prop8 gen9 prop9 gen9_8 prop9_8 vdd vss DotOperatorUpperInvSlow
     xDotOperator_a_5 gen10 prop10 gen11 prop11 gen11_10 prop11_10 vdd vss DotOperatorUpperInvSlow
     xDotOperator_a_6 gen12 prop12 gen13 prop13 gen13_12 prop13_12 vdd vss DotOperatorUpperInvSlow
     xDotOperator_a_7 gen14 prop14 gen15 prop15 gen15_14 prop15_14 vdd vss DotOperatorUpperInvSlow
 
     xDotOperator_b_0 gen1_0	    gen3_2 prop3_2 gen3_0	  vdd vss DotOperatorLower multfac='1'
-	xNOT2	gen3_0  gen3_0_inv	vdd vss MYNOTSLOW
-	xNOT3	gen3_0_inv  gen3_0_b	vdd vss MYNOTSLOW
+        xNOT2	gen3_0  gen3_0_inv	vdd vss MYNOTSLOW
+	xNOT3_0	gen3_0_inv  gen3_0_b	vdd vss MYNOTSLOW
     xDotOperator_b_1 gen5_4 prop5_4 gen7_6 prop7_6 gen7_4 prop7_4 vdd vss DotOperatorUpperSlow
     xDotOperator_b_2 gen9_8 prop9_8 gen11_10 prop11_10 gen11_8 prop11_8 vdd vss DotOperatorUpperSlow
     xDotOperator_b_3 gen13_12 prop13_12 gen15_14 prop15_14 gen15_12 prop15_12 vdd vss DotOperatorUpperSlow
@@ -83,56 +82,51 @@ $ end
     xDotOperator_c_0 gen3_0	    gen7_4 prop7_4 gen7_0 		  vdd vss DotOperatorLowerInv multfac='1'
     xDotOperator_c_1 gen11_8 prop11_8 gen15_12 prop15_12 gen15_8 prop15_8 vdd vss DotOperatorUpperInvSlow
 
-    xDotOperator_d_0 gen7_0_b	    gen15_8 prop15_8 gen15_0	      vdd vss DotOperatorLowerInvSlow
+    xDotOperator_d_0 gen7_0_b	    gen15_8 prop15_8 gen15_0	      vdd vss DotOperatorLowerSlow
 
     	xNOT7_1	gen7_0  gen7_0_inv	vdd vss MYNOTSLOW
-	xNOT7_2	gen7_0_inv  gen7_0_b	vdd vss MYNOTSLOW
+        xNOT7_2	gen7_0_inv  gen7_0_b	vdd vss MYNOTSLOW
 
-	xNOT11_8g	gen11_8  gen11_8_inv	vdd vss MYNOTSLOW
-	xNOT11_8p	prop11_8  prop11_8_inv	vdd vss MYNOTSLOW
+        xNOT11_8g	gen11_8  gen11_8_inv	vdd vss MYNOTSLOW
+        xNOT11_8p	prop11_8  prop11_8_inv	vdd vss MYNOTSLOW
     xDotOperator_l_1 gen7_0	    gen11_8_inv prop11_8_inv gen11_0	      vdd vss DotOperatorLower multfac='1'
-	xNOT7	gen11_0  gen11_0_inv	vdd vss MYNOTSLOW
-
+        xNOT7	gen11_0  gen11_0_inv	vdd vss MYNOTSLOW
+	xNOT11g	gen11_0_inv  gen11_0_b	vdd vss MYNOTSLOW
     xDotOperator_m_1 gen3_0_inv	    gen5_4 prop5_4 gen5_0 	  vdd vss DotOperatorLowerSlow
     xDotOperator_m_2 gen7_0_b	    gen9_8 prop9_8 gen9_0	  vdd vss DotOperatorLowerSlow
-	xNOT13_g	gen13_12  gen13_12_inv	vdd vss MYNOTSLOW
-	xNOT13_p	prop13_12  prop13_12_inv	vdd vss MYNOTSLOW
+        xNOT13_g	gen13_12  gen13_12_inv	vdd vss MYNOTSLOW
+        xNOT13_p	prop13_12  prop13_12_inv	vdd vss MYNOTSLOW
     xDotOperator_m_3 gen11_0 gen13_12_inv prop13_12_inv gen13_0 vdd vss DotOperatorLowerInv multfac='1'
 
-    	xNOT9_1	gen1_0  gen1_0_inv	vdd vss MYNOTSLOW
-	xNOT9_2	gen1_0_inv  gen1_0_b	vdd vss MYNOTSLOW
-	xNOT9_3	gen2  gen2_inv		vdd vss MYNOTSLOW
-	xNOT9_4	prop2  prop2_inv	vdd vss MYNOTSLOW
-
-    xDotOperator_n_1 gen1_0_b	    gen2_inv prop2_inv gen2_0	      vdd vss DotOperatorLowerSlow
+    xDotOperator_n_1 gen1_0_inv	    gen2 prop2 gen2_0	      vdd vss DotOperatorLowerInvSlow
     xDotOperator_n_2 gen3_0_b	    gen4 prop4 gen4_0	      vdd vss DotOperatorLowerInvSlow
     xDotOperator_n_3 gen5_0	    gen6 prop6 gen6_0	      vdd vss DotOperatorLowerInvSlow
     xDotOperator_n_4 gen7_0_inv	    gen8 prop8 gen8_0	      vdd vss DotOperatorLowerInvSlow
     xDotOperator_n_5 gen9_0	    gen10 prop10 gen10_0      vdd vss DotOperatorLowerInvSlow
-	xNOT12g	gen12  gen12_inv	vdd vss MYNOTSLOW
-	xNOT12p	prop12  prop12_inv	vdd vss MYNOTSLOW
-    xDotOperator_n_6 gen11_0_inv gen12_inv prop12_inv gen12_0 vdd vss DotOperatorLowerSlow
-	xNOT14g	gen14  gen14_inv	vdd vss MYNOTSLOW
-	xNOT14p	prop14  prop14_inv	vdd vss MYNOTSLOW
+    xDotOperator_n_6 gen11_0_b gen12 prop12 gen12_0 vdd vss DotOperatorLowerInvSlow
+        xNOT14g	gen14  gen14_inv	vdd vss MYNOTSLOW
+        xNOT14p	prop14  prop14_inv	vdd vss MYNOTSLOW
     xDotOperator_n_7 gen13_0 gen14_inv prop14_inv gen14_0 vdd vss DotOperatorLower multfac='1'
 
 	.connect prop0_inv s0
-    xXOR_1 prop1 gen0   s1 vdd vss MYTXOR
-    xXOR_2 prop2 gen1_0_inv s2 vdd vss MYTXOR 
-    xXOR_3 prop3 gen2_0 s3 vdd vss MYTXOR 
-    xXOR_4 prop4 gen3_0_inv s4 vdd vss MYTXNOR 
-    xXOR_5 prop5 gen4_0 s5 vdd vss MYTXNOR 
-    xXOR_6 prop6 gen5_0 s6 vdd vss MYTXOR 
-    xXOR_7 prop7 gen6_0 s7 vdd vss MYTXNOR 
+	xNOT0g	gen0  gen0_inv	vdd vss MYNOTSLOW
+    xXOR_1 prop1 gen0_inv   s1 vdd vss MYTXORinv
+    xXOR_2 prop2 gen1_0_inv s2 vdd vss MYTXOR
+    xXOR_3 prop3 gen2_0 s3 vdd vss MYTXORinv 
+    xXOR_4 prop4 gen3_0_inv s4 vdd vss MYTXORinv 
+    xXOR_5 prop5 gen4_0 s5 vdd vss MYTXORinv 
+    xXOR_6 prop6 gen5_0 s6 vdd vss MYTXOR
+    xXOR_7 prop7 gen6_0 s7 vdd vss MYTXORinv 
     xXOR_8 prop8 gen7_0_inv s8 vdd vss MYTXOR 
-    xXOR_9 prop9 gen8_0 s9 vdd vss MYTXNOR 
-    xXOR_10 prop10 gen9_0 s10 vdd vss MYTXOR 
-    xXOR_11 prop11 gen10_0 s11 vdd vss MYTXNOR 
-    xXOR_12 prop12 gen11_0_inv s12 vdd vss MYTXNOR 
-    xXOR_13 prop13 gen12_0 s13 vdd vss MYTXOR
-    xXOR_14 prop14 gen13_0 s14 vdd vss MYTXNOR 
-    xXOR_15 prop15 gen14_0 s15 vdd vss MYXOR  multfac='4'  
-    xXOR_16   gen15_0 s16 vdd vss MYNOTSLOW
+    xXOR_9 prop9 gen8_0 s9 vdd vss MYTXORinv 
+    xXOR_10 prop10 gen9_0 s10 vdd vss MYTXOR
+    xXOR_11 prop11 gen10_0 s11 vdd vss MYTXORinv
+    xXOR_12 prop12 gen11_0_inv s12 vdd vss MYTXORinv 
+    xXOR_13 prop13 gen12_0 s13 vdd vss MYTXORinv
+	xNOT13g	gen13_0  gen13_0_inv	vdd vss MYNOTSLOW
+    xXOR_14 prop14 gen13_0_inv s14 vdd vss MYTXOR 
+    xXOR_15 prop15 gen14_0 s15 vdd vss MYXOR  multfac='5'  
+        xNOT_16   gen15_0 s16 vdd vss MYNOTSLOW
 .ENDS ADDER
 
 
@@ -196,7 +190,7 @@ $ end
 .ENDS MYAOIslow
 
 .SUBCKT MYOAI Gen2 Prop2 Gen1 Out vdd vss multfac='1'
-    xM1 np1     Prop2  vdd vdd MOSP w='multfac*2*120e-9' l='45e-9'
+    xM1 np1     Prop2  vdd vdd MOSP w='multfac*8*120e-9' l='45e-9'
     xM2 Out     Gen1  np1 vdd MOSP w='multfac*2*120e-9' l='45e-9'
     xM3 Out     Gen2  vdd vdd MOSP w='1*120e-9' l='45e-9'
     
@@ -221,14 +215,14 @@ $ end
     xM2 output input vdd vdd MOSP w='multfac*1*120e-9' l='45e-9'
 .ENDS MYNOTSLOW
 
-.SUBCKT GenPropInv A B Gen_inv Prop_inv vdd vss
-    xAND A B Gen_inv  vdd vss MYNAND
-    xXNOR A B Prop_inv vdd vss MYXNOR
-.ENDS GenpropInv
+*.SUBCKT GenPropInv A B Gen_inv Prop_inv vdd vss
+    *xAND A B Gen_inv  vdd vss MYNAND
+    *xXNOR A B Prop_inv vdd vss MYXNOR
+*.ENDS GenpropInv
 
 .SUBCKT GenPropInvSlow A B Gen_inv Prop_inv vdd vss
     xAND A B Gen_inv  vdd vss MYNANDslow
-    xXNOR A B Prop_inv vdd vss MYTXNOR
+    xXNOR A B Prop_inv vdd vss MYTXORinv
 .ENDS GenpropInvSlow
 
 .SUBCKT DotOperatorUpper Gen1 Prop1 Gen2 Prop2 NGenOut NPropOut vdd vss multfac='1'
@@ -241,7 +235,13 @@ $ end
     xAOI Gen2 Prop2 Gen1 GenOut vdd vss MYOAI multfac=multfac
 
     xXNOR Prop2 Prop1 PropOut vdd vss MYNOR multfac=multfac
-.ENDS DotOperator
+.ENDS DotOperatorUpperInv
+
+.SUBCKT DotOperatorUpperInvMod Gen1 Prop1 Gen2 Prop2 GenOut PropOut vdd vss multfac='1'
+    xAOI Gen2 Gen1 Prop2 GenOut vdd vss MYOAI multfac=multfac
+
+    xXNOR Prop2 Prop1 PropOut vdd vss MYNOR multfac=multfac
+.ENDS DotOperatorUpperInvMod
 
 .SUBCKT DotOperatorUpperSlow Gen1 Prop1 Gen2 Prop2 NGenOut NPropOut vdd vss multfac='1'
     xAOI Gen2 Prop2 Gen1 NGenOut vdd vss MYAOIslow multfac=multfac
@@ -253,7 +253,7 @@ $ end
     xAOI Gen2 Prop2 Gen1 GenOut vdd vss MYOAIslow multfac=multfac
 
     xXNOR Prop2 Prop1 PropOut vdd vss MYNORslow multfac=multfac
-.ENDS DotOperatorSlow
+.ENDS DotOperatorInvSlow
 
 .SUBCKT DotOperatorLower Gen1 Gen2 Prop2 GenOut vdd vss multfac='1'
     xAOI Gen2 Prop2 Gen1 GenOut vdd vss MYAOI multfac=multfac
@@ -309,6 +309,15 @@ $ end
     xM3 output inputB inputA vdd MOSP w='multfac*1*120e-9' l='45e-9'
     xM2 output inputB_inv inputA vss MOSN w='multfac*1*120e-9' l='45e-9'
 .ENDS MYTXOR
+
+.SUBCKT MYTXORinv inputA inputB output vdd vss multfac='1'
+	xNOT1 inputB inputB_inv vdd vss MYNOTSLOW
+    xM4 output inputA inputB_inv vdd MOSP w='multfac*1*120e-9' l='45e-9'
+    xM1 output inputA inputB vss MOSN w='multfac*1*120e-9' l='45e-9'
+
+    xM3 output inputB_inv inputA vdd MOSP w='multfac*1*120e-9' l='45e-9'
+    xM2 output inputB inputA vss MOSN w='multfac*1*120e-9' l='45e-9'
+.ENDS MYTXORinv
 
 .SUBCKT MYTXOR1 inputA inputB output vdd vss multfac='1'
 	xNOT1 inputB inputB_inv vdd vss MYNOT

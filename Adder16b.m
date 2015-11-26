@@ -18,7 +18,7 @@ toc
 %% calculate the characteristics
 
 vdd = globals.supply;
-
+type(['spicefiles/',inputfile, '.err0'])
 %- delay calculation -
 %---------------------
 time        = evalsig(transientsim, 'TIME');
@@ -75,5 +75,5 @@ if(displayOn)
     %disp(' ')
     disp(['DC power consumption        = ',num2str(DCpower*1e9),' nW'])
     
-    type(['spicefiles/',inputfile, '.err0'])
+    %type(['spicefiles/',inputfile, '.err0'])
 end
